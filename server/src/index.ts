@@ -5,8 +5,6 @@ import fs from 'fs';
 const app = express();
 const port = process.env.PORT || 3001;
 
-const app = express();
-const port = process.env.PORT || 3001;
 
 // Serve static files from the React build directory
 app.use(express.static(path.join(__dirname, 'public')));
