@@ -1,15 +1,15 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "module": "CommonJS",         // Node.js uses CommonJS modules
-    "moduleResolution": "node",   // Resolve modules the same way Node.js does
+    "target": "ES2020", // or "ESNext" based on your needs
+    "module": "ESNext", // or "ES2020" or "ES2022"
+    "moduleResolution": "Node",
     "outDir": "./dist",
     "rootDir": "./src",
-    "strict": true,
     "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "strict": true,
+    "skipLibCheck": true
   },
   "include": ["src/**/*.ts"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "dist"]
 }
+
