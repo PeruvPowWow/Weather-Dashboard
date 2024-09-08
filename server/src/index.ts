@@ -1,7 +1,6 @@
 import dotenv from 'dotenv';
 import express from 'express';
 import path from 'path';
-import routes from './routes/index';
 
 dotenv.config();
 
@@ -9,13 +8,14 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // Serve static files from the 'public' directory
-app.use(express.static(path.join(__dirname, '../public')));
+app.use(express.static(path.join(__dirname, '../client/dist')));
 
-// Middleware
+// Other middlewares and routes
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Import routes
+import routes from './routes/index.js';  // Ensure this path is correct
 app.use(routes);
 
 app.listen(PORT, () => {
