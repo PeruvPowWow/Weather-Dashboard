@@ -68,6 +68,10 @@ class WeatherService {
   constructor(baseURL: string, apiKey: string) {
     this.baseURL = baseURL;
     this.apiKey = apiKey;
+
+    console.log('WeatherService initialized with:');
+    console.log('API_BASE_URL:', this.baseURL);
+    console.log('API_KEY:', this.apiKey);
   }
 
   private async fetchLocationData(query: string): Promise<Coordinates> {
