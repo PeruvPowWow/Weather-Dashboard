@@ -7,8 +7,8 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// Serve static files from the 'public' directory
-app.use(express.static(path.join(__dirname, '../client/dist')));
+// Serve static files from the 'public/assets' directory
+app.use(express.static(path.join(__dirname, '../../public/assets')));
 
 // Other middlewares and routes
 app.use(express.urlencoded({ extended: true }));

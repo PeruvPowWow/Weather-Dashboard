@@ -63,7 +63,7 @@ interface WeatherApiResponse {
 class WeatherService {
   private baseURL: string;
   private apiKey: string;
-  private cityName: string | null = null; // Initialize as null or an empty string
+  private cityName: string | null = null;
 
   constructor(baseURL: string, apiKey: string) {
     this.baseURL = baseURL;
@@ -188,7 +188,7 @@ class WeatherService {
   }
 }
 
-// Instantiate the WeatherService without `name` as a parameter
+// Instantiate the WeatherService with baseURL and apiKey
 const weatherService = new WeatherService(baseURL, apiKey);
 
 export default weatherService;
