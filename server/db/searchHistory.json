@@ -1,14 +1,6 @@
 [
-    {
-      "name": "San Diego",
-      "id": "0e8f2b6f-095b-4947-b8c1-360b613d02d2"
-    },
-    {
-      "name": "Portland",
-      "id": "bcea020b-99fc-48c1-ae6c-7e3756b8e2c8"
-    },
-    {
-      "name": "Phoenix",
-      "id": "ab99f534-282b-43de-b9f5-e2c8965b1e0a"
-    }
-  ]
+	{
+		"name": "San Diego",
+		"id": "55e881c4-8231-4ce3-90de-8cf2a3c20f8c"
+	}
+]
